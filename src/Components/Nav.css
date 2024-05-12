@@ -1,0 +1,37 @@
+#Nav{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    z-index: 10;
+}
+#Nav .logo{
+    width: 150px;
+    object-fit: contain;
+    margin: 0px 30px;
+}
+#Nav .navOptions{
+    display: flex;
+    gap: 2px;
+    margin: 0px 50px;
+}
+#Nav .navOption{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    transition-duration: 200ms;
+}
+#Nav .navOption:hover{
+    background-color: rgb(233, 209, 89);
+}
+@media screen and (max-width:550px) {
+    #Nav .logo{
+        width: 20vw;
+    }
+}

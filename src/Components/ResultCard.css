@@ -1,0 +1,22 @@
+#ResultCard{
+    background-color: rgb(157, 157, 157);
+    padding: 20px;
+    border-radius: 20px;
+    transition-duration: 200ms;
+}
+#ResultCard .cardImg{
+    height: 200px;
+    border-radius: 7px;
+}
+#ResultCard .pokeName{
+    margin-top: 10px;
+    font-weight: 500;
+}
+#ResultCard:hover{
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#ResultCard:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}

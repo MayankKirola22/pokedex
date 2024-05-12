@@ -1,0 +1,16 @@
+#PokeDetails .pokedetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+@media screen and (max-width:850px) {
+    #PokeDetails .pokedetails{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:550px) {
+    #PokeDetails .pokedetails{
+        padding: 20px;
+    }
+}

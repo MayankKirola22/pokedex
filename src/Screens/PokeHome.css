@@ -1,0 +1,100 @@
+#PokeHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#PokeHome .pokesetImg {
+    width: 15vw;
+    max-width: 200px;
+}
+
+#PokeHome .section {
+    display: flex;
+    margin: 50px;
+    
+}
+
+#PokeHome .intro {
+    font-size: 20px;
+    padding: 0px 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#PokeHome .goToSearch {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    box-shadow: rgba(50, 50, 93, 0.592) 0px 50px 100px -20px, rgba(0, 0, 0, 0.621) 0px 30px 60px -30px, rgba(10, 37, 64, 0.873) 0px -2px 6px 0px inset;
+}
+
+#PokeHome .goToSearch:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff5a5a88,
+            #fdb57a88,
+            #fffc5688,
+            #9aff7388,
+            #73ffe888,
+            #788eff88,
+            #bd80ff88,
+            #ff81e488,
+            #ff838388);
+    position: absolute;
+    top: -0px;
+    background-size: 400%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#PokeHome .goToSearch:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width:850px) {
+    #PokeHome .pokesetImg {
+        width: 100px;
+    }
+    #PokeHome .pokeSetImages{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #PokeHome .intro {
+        padding: 0px 20px;
+    }
+}

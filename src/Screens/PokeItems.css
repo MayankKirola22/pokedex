@@ -1,0 +1,11 @@
+.pokeItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+@media screen and (max-width:550px) {
+    .pokeItem{
+        flex-direction: column-reverse;
+        padding: 0px 20px;
+    }
+}
